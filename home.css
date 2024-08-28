@@ -1,0 +1,84 @@
+.navbar{
+    display: flex;
+    background:linear-gradient(rgb(84, 162, 214),rgb(103, 177, 223),rgb(106, 127, 232));
+    align-items:center;
+    justify-content: space-between;
+    margin:auto;
+    height:90px;
+}
+
+ .navbar img{
+    height:80px;
+    width:100px;
+   
+    
+    
+}
+
+.navbar h1 {
+    position: relative;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:26px;
+    color: rgba(13, 2, 2, 0.952);
+    padding: 0 10px;
+    transition: color 0.3s ease-in-out;
+    
+}
+#hd
+{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color:inherit;
+  pointer-events: none;
+}
+
+
+#hd:hover {
+    text-decoration: none;
+    color: inherit;
+    transition:none !important;
+}
+
+.navbar h1:after {
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px; 
+    transition: width 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.navbar h1:hover:after {
+    width: 100%;
+    opacity: 1; 
+}
+
+.navbar h1:hover {
+    color:rgba(243, 238, 238, 0.995);
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    background:linear-gradient(rgb(42, 178, 231),rgb(91, 184, 221));
+    /* margin:auto; */
+}
+
+marquee
+{
+    background-color:rgb(205, 221, 237);
+
+}
+
+form{
+    margin:50px 50px 50px 50px;
+    border:5px bold black;
+}
+
+
+
