@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 35px;
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        .info-value {
+            color: #34495e;
+        }
+
+        button {
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 20px 10px 0 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        #Accept {
+            background-color: #28a745;
+            color: white;
+        }
+
+        #Accept:hover {
+            background-color: #218838;
+        }
+
+        #Reject {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        #Reject:hover {
+            background-color: #c82333;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Details</h1>
+
+        <h2>Personal Details</h2>
+        <hr>
+        <p><span class="info-label">First Name:</span> <span class="info-value"><%= data.firstname %></span></p>
+        <p><span class="info-label">Last Name:</span> <span class="info-value"><%= data.Lastname %></span></p>
+        <p><span class="info-label">Aadhar Number:</span> <span class="info-value"><%= data.Aadharnum %></span></p>
+        <p><span class="info-label">Mobile Number:</span> <span class="info-value"><%= data.MobileNum %></span></p>
+        <p><span class="info-label">Alternate Mobile Number:</span> <span class="info-value"><%= data.AltMobilenum %></span></p>
+        <p><span class="info-label">Permanent Address:</span> <span class="info-value"><%= data.PermanentAddress %></span></p>
+        <p><span class="info-label">Temporary Address:</span> <span class="info-value"><%= data.TempAddress %></span></p>
+        <p><span class="info-label">Caste:</span> <span class="info-value"><%= data.Caste %></span></p>
+        <p><span class="info-label">Religion:</span> <span class="info-value"><%= data.Religion %></span></p>
+        <p><span class="info-label">City:</span> <span class="info-value"><%= data.City %></span></p>
+        <p><span class="info-label">State:</span> <span class="info-value"><%= data.State %></span></p>
+        <p><span class="info-label">Pincode:</span> <span class="info-value"><%= data.Pincode %></span></p>
+
+        <h2>Bank Details</h2>
+        <hr>
+        <p><span class="info-label">Account Holder:</span> <span class="info-value"><%= data.AccountHolder %></span></p>
+        <p><span class="info-label">Account Number:</span> <span class="info-value"><%= data.Accountnum %></span></p>
+        <p><span class="info-label">IFSC Code:</span> <span class="info-value"><%= data.IFSC %></span></p>
+        <p><span class="info-label">Parents Occupation:</span> <span class="info-value"><%= data.ParentsOccupation %></span></p>
+        <p><span class="info-label">Annual Income:</span> <span class="info-value"><%= data.incomerange %></span></p>
+
+        <h2>Academic Details</h2>
+        <hr>
+        <p><span class="info-label">Roll 10th:</span> <span class="info-value"><%= data.Roll10th %></span></p>
+        <p><span class="info-label">State 10th:</span> <span class="info-value"><%= data.State10th %></span></p>
+        <p><span class="info-label">Marks 10th:</span> <span class="info-value"><%= data.Marks10th %></span></p>
+        <p><span class="info-label">Max Marks 10th:</span> <span class="info-value"><%= data.MaxMarks10th %></span></p>
+        <p><span class="info-label">Roll 12th:</span> <span class="info-value"><%= data.Roll12th %></span></p>
+        <p><span class="info-label">State 12th:</span> <span class="info-value"><%= data.State12th %></span></p>
+        <p><span class="info-label">Marks for 12th:</span> <span class="info-value"><%= data.Marks12th %></span></p>
+        <p><span class="info-label">Max Marks for 12th:</span> <span class="info-value"><%= data.MaxMarks12th %></span></p>
+
+       
+    </div>
+</body>
+</html>
